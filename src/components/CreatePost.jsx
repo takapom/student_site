@@ -1,16 +1,23 @@
 import React from 'react';
 import { useState } from 'react';
 import "./CreatePost.css";
+import {addDoc, collection} from "firebase/firestore"
+import {db, auth} from "../firebase"
 
 const CreatePost = () => {
   const [title, setTitle] = useState();
   const [postText, setPostText] = useState();
 
-  const createPost = () => {
-    console.log(title)
-    console.log(postText)
-
-  }
+  const createPost = async() => {
+    await addDoc(collection(db, "posts"), {
+      title: "title",
+      postText: postText, 
+      author: {
+        username: auth.currentUser.displayName,
+        id: auth.currentUser.uid
+      }
+    })
+  };
 
   return (
     <div className='createPostPage'>
