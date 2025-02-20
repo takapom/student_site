@@ -1,3 +1,7 @@
+body{
+    background-color: rgb(186, 237, 186);
+}
+
 .createPostPage{
     display: flex;
     justify-content: center;

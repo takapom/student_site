@@ -10,7 +10,7 @@ const CreatePost = () => {
 
   const createPost = async() => {
     await addDoc(collection(db, "posts"), {
-      title: "title",
+      title: title,
       postText: postText, 
       author: {
         username: auth.currentUser.displayName,
