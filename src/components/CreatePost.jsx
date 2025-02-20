@@ -5,16 +5,21 @@ import {addDoc, collection} from "firebase/firestore"
 import {db, auth} from "../firebase"
 
 const CreatePost = () => {
-  const [title, setTitle] = useState();
-  const [postText, setPostText] = useState();
+  const [title, setTitle] = useState("");
+  const [postText, setPostText] = useState("");
 
   const createPost = async() => {
+    window.alert("投稿しました！")
+    setTitle("")
+    setPostText("")
     await addDoc(collection(db, "posts"), {
       title: title,
       postText: postText, 
       author: {
         username: auth.currentUser.displayName,
         id: auth.currentUser.uid
+
+
       }
     })
   };
