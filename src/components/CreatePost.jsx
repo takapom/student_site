@@ -18,8 +18,6 @@ const CreatePost = () => {
       author: {
         username: auth.currentUser.displayName,
         id: auth.currentUser.uid
-
-
       }
     })
   };

@@ -5,6 +5,7 @@ import CreatePost from './components/CreatePost';
 import Login from './components/Login';
 import Logout from './components/Logout';
 import Navbar from './components/Navbar';
+import Main from './components2/Main';
 
 
 
@@ -15,6 +16,7 @@ function App(){
   <Router>
     <Navbar IsAuth={IsAuth}/>
     <Routes>
+    <Route path="/main" element={<Main />}></Route>
      <Route path="/" element={<Home />}></Route>
      <Route path="/createpost" element={<CreatePost />}></Route>
      <Route path="/login" element={<Login setIsAuth={setIsAuth} />}></Route>
