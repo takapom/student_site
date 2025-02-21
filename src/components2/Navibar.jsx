@@ -7,7 +7,6 @@ const Navibar = () => {
   return (
     <nav>
      <Link to="/Main">
-      <FontAwesomeIcon icon={ faHouse } size='2x'/>
       </Link>
     </nav>
   )

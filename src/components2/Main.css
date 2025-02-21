@@ -1,0 +1,29 @@
+/* 全体の背景色 */
+body {
+    background-color: #080606; /* ダーク背景 */
+    color: #ffffff; /* 白い文字 */
+}
+
+
+
+.navbar-nav {
+    display: flex;
+    text-align: left;  /* 左揃え */
+    list-style: none;  /* リストの点を消す */
+    padding-left: 0;   /* インデントをなくす */
+  }
+  
+.navbar-text{
+    display: block;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+
