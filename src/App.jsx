@@ -1,11 +1,13 @@
 import React, { useState } from 'react'
+import Main from './components2/Main';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';  
 import Home from './components/Home';
 import CreatePost from './components/CreatePost';
 import Login from './components/Login';
 import Logout from './components/Logout';
 import Navbar from './components/Navbar';
-import Main from './components2/Main';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 
 

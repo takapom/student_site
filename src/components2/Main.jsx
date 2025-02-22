@@ -1,31 +1,44 @@
-import React from 'react'
-import Navibar from './Navibar'
+import { useState } from "react";
+import { Button, Offcanvas } from "react-bootstrap";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./Main.css"
+import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
 
-const Main = () => {
+
+
+
+function Sidebar() {
+  const [show, setShow] = useState(false);
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+
   return (
-    <div>
-      <h1> <Navibar/></h1>
+    <>    
+
+      <FontAwesomeIcon icon={faBars} size="3x" onClick={handleShow} className="humber"/>
 
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-            {/* <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"> */}
-                {/* <span class="navbar-toggler-icon"></span> */}
-            {/* </button> */}
-            <div class="navbar-nav" id="navbarNav">
-                <ul class="navbar-text">
-                    <li class="nav-item"><a class="nav-link" href="#">ホーム</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">授業情報</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">お知らせ</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">設定</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+        <Offcanvas show={show} onHide={handleClose} className="w-25">
+        <Offcanvas.Header closeButton>
+          <Offcanvas.Title>メニュー</Offcanvas.Title>
+        </Offcanvas.Header>
+        <Offcanvas.Body>
 
-    </div>
-  )
+          <ul className="list-unstyled">
+            <Link to="/">
+            <li><Button variant="primary">掲示板</Button></li>
+            </Link>
+          <li><Button variant="secondary">テスト対策</Button></li>
+          <li><Button variant="success">教科書売買</Button></li>
+          </ul>
+
+
+
+        </Offcanvas.Body>
+      </Offcanvas>
+    </>
+  );
 }
 
-export default Main
+export default Sidebar;

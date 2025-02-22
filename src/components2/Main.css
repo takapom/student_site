@@ -13,10 +13,23 @@ body {
     padding-left: 0;   /* インデントをなくす */
   }
   
-.navbar-text{
+
+.list-unstyled{
     display: block;
-    justify-content: center;
+    align-items: center;
 }
+
+.list-unstyled button{
+    width: 100%;
+    margin-top: 30px;
+}
+
+.humber {
+    cursor: pointer; /* クリック可能に */
+    margin: 10px; /* 必要に応じて調整 */
+    padding: 10px;
+  }
+
 
 
 
