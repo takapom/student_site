@@ -27,7 +27,10 @@ const Navibar = () => {
   </div>
 
      
-
+      <footer className='footer'>
+        <p>開発者：髙木　優希</p>
+        <p>技術スタック：React、Next.js</p>
+      </footer>
 
     </>
     
