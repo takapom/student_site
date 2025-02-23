@@ -1,0 +1,49 @@
+/* 全体の背景色 */
+body {
+    background-color: #080606; /* ダーク背景 */
+    color: #ffffff; /* 白い文字 */
+}
+
+
+
+.navbar-nav {
+    display: flex;
+    text-align: left;  /* 左揃え */
+    list-style: none;  /* リストの点を消す */
+    padding-left: 0;   /* インデントをなくす */
+  }
+  
+
+.list-unstyled{
+    display: block;
+    align-items: center;
+}
+
+.list-unstyled button{
+    width: 100%;
+    margin-top: 30px;
+}
+
+.humber {
+    cursor: pointer; /* クリック可能に */
+    margin: 10px; /* 必要に応じて調整 */
+    
+}
+
+.me-auto{
+    background-color: rgb(229, 229, 239);
+}
+
+.head-menu{
+    display: flex;
+}
+
+
+
+
+
+
+
+
+
+

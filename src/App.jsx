@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import Main from './components2/Main';
+import Main from './components2/Main.jsx';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';  
 import Home from './components/Home';
 import CreatePost from './components/CreatePost';
