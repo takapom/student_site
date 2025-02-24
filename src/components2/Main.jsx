@@ -34,8 +34,9 @@ function Sidebar() {
 
           <Nav className="me-auto">
             <Nav.Link href="./">掲示板</Nav.Link>
-            <Nav.Link href="#link">教科書売買システム</Nav.Link>
+            <Nav.Link href="#link">教科書売買システム（※実装予定）</Nav.Link>
             <Nav.Link href="#link">テスト対策フォーム</Nav.Link>
+            <Nav.Link href="#link">サイトの使い方</Nav.Link>
             <NavDropdown title="more" id="basic-nav-dropdown">
               <NavDropdown.Item href="#action/3.1">教員メールアドレス</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2">
@@ -51,12 +52,9 @@ function Sidebar() {
         </Navbar.Collapse>
       </Container>
     </Navbar>
-
-
-
     </header>
 
-
+      
     </>
   );
 }

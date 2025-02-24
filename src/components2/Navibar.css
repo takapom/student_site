@@ -4,6 +4,9 @@ body {
     color: #ffffff; /* 白い文字 */
 }
 
+.first-commnet{
+    font-size: 20px;
+}
 
 
 .navbar-nav {
@@ -38,6 +41,24 @@ body {
     display: flex;
 }
 
+.footer{
+    display: block;
+    justify-content: center;
+    margin-top: 50px;
+    text-align: center;
+    background-color: gray;
+    width: 80%;
+}
+
+.footer-container{
+    font-weight: bold;
+    padding: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 50px;
+    
+}
 
 
 

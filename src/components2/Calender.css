@@ -1,0 +1,34 @@
+/* カレンダー全体の背景 */
+.fc {
+    margin-top: 100px;
+    max-width: 700px;
+    margin: auto;
+    background-color: #eee1e1; /* 薄いグレー */
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 100px;
+}
+
+.calendar-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* 画面幅いっぱいにする */
+}
+
+/* ヘッダーのタイトル */
+.fc-toolbar-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #663131;
+}
+
+/* ヘッダーボタン */
+.fc-button {
+    background-color: #007bff; /* 青色 */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 14px;
+}
