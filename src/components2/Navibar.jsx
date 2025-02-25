@@ -25,10 +25,10 @@ const Navibar = () => {
    <div className='container-new'>
     <div className='new-make'>
       <h1>更新内容</h1>
-      <p>2/24；掲示板のバグ修正</p>
       <p>2/24：教科書売買システムのバグ修正</p>
       <p>2/24：ログインバグ修正</p>
       <p>2/25：就活情報の記載</p>
+      <p>2/25：プログラミング言語の追記</p>
     </div>
   </div>
 
@@ -44,7 +44,7 @@ const Navibar = () => {
 
       <div className='syukatu-container'>
         <p>job hunting</p>
-        <Link to="/program">
+        <Link to="#">
         <button>check</button>
         </Link>
       </div>

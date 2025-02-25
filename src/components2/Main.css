@@ -16,10 +16,11 @@
 }
 
 .new-make {
-    width: 60%;
+    width: 70%;
     max-width: 800px;
     margin-top: 50px;
-    padding: 20px;
+    padding: 40px;
+    border: 2px solid;
     background-color: rgb(224, 178, 178);
     border-radius: 10px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
