@@ -5,9 +5,15 @@ body {
 }
 
 .first-commnet{
-    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
+.hello{
+    font-size: 20px;
+}
 
 .navbar-nav {
     display: flex;
@@ -57,7 +63,43 @@ body {
     justify-content: center;
     align-items: center;
     margin: 50px 50px;
-    
+}
+
+.study-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    max-width: 600px;
+    background-color: rgb(103, 111, 174);
+    padding: 20px;
+    border:2px solid ;
+    border-radius: 8px;
+    margin-left: 10%;
+}
+
+.syukatu-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    max-width: 600px;
+    background-color: rgb(103, 103, 164);
+    padding: 20px;
+    border: 2px solid;
+    border-radius: 8px;
+    margin-right: 10%;
+}
+
+.study-syukatu-container{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    gap: 40px;
+    margin-top: 50px;
+    height: 40vh;
 }
 
 

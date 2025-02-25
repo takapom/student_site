@@ -7,12 +7,13 @@ import Calendar from './Calendar'
 
 
 
+
 const Navibar = () => {
   return (
     <>
 
     <div className='first-commnet'>
-      <p className='hello'>大和大学の情報学部の生徒向けのポータルサイトを作成しました！</p>
+      <p className='hello'>大和大学の情報学部の生徒向けの<span>ポータルサイトを作成しました！！</span></p>
       <p className='hello'>新しい機能を随時追加していきます！</p>
       <p className='hello'>使い方はメニューバーから見てください！</p>
     </div>
@@ -30,14 +31,19 @@ const Navibar = () => {
 
   <Calendar />
 
-<div className='study-contaner'>
-  <div className='syukatu-information'>
-  <p>どのプログラミング言語やフレームワークを使えばいいか分からない方向けにまとめてます！！</p>
-  <button>こちら！！</button>
-    <p>IT業界の就活の動き方！！</p>
-    <button>こちら！！</button>
-  </div>
-   </div>
+    <section className='study-syukatu-container'>
+    <div className='study-container'>
+      <p>Programing</p>
+        <button>check</button>
+      </div>
+
+      <div className='syukatu-container'>
+        <p>job hunting</p>
+        <button>check</button>
+      </div>
+    </section>
+
+  
 
     <div className='footer-container'>
     <footer className='footer'>
@@ -45,7 +51,6 @@ const Navibar = () => {
         <p>技術スタック：React、Next.js、boostrap</p>
       </footer>
       </div> 
-
 
     </>
     

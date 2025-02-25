@@ -10,13 +10,13 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 
-
 function App(){
   //ローカルストレージを管理
   const [IsAuth, setIsAuth] = useState(false);
   return (
+    // componentsのコンポーネント
   <Router>
-    <Navbar IsAuth={IsAuth}/>
+     <Navbar IsAuth={IsAuth}/>
     <Routes>
     <Route path="/main" element={<Main />}></Route>
      <Route path="/" element={<Home />}></Route>
@@ -25,7 +25,7 @@ function App(){
      <Route path="/logout" element={<Logout setIsAuth={setIsAuth}/>}></Route>
     </Routes>
   </Router>
-  );
+  )
 }
 
 export default App;
