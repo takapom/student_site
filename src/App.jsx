@@ -7,7 +7,8 @@ import Login from './components/Login';
 import Logout from './components/Logout';
 import Navbar from './components/Navbar';
 import 'bootstrap/dist/css/bootstrap.min.css';
-
+import Navibar from './components2/Navibar';
+import Program from './components2/Program';
 
 
 function App(){
@@ -23,6 +24,9 @@ function App(){
      <Route path="/createpost" element={<CreatePost />}></Route>
      <Route path="/login" element={<Login setIsAuth={setIsAuth} />}></Route>
      <Route path="/logout" element={<Logout setIsAuth={setIsAuth}/>}></Route>
+             {/* components2 のページ */}
+    <Route path="/navibar" element={<Navibar />} />
+    <Route path="/program" element={<Program />} />
     </Routes>
   </Router>
   )

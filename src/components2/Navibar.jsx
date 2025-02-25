@@ -4,6 +4,9 @@ import { faHouse, faFilePen, faArrowRightToBracket, faBars, faComment } from '@f
 import { Link } from 'react-router-dom'
 import "./Navibar.css"
 import Calendar from './Calendar'
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap-icons/font/bootstrap-icons.css';
+
 
 
 
@@ -34,23 +37,55 @@ const Navibar = () => {
     <section className='study-syukatu-container'>
     <div className='study-container'>
       <p>Programing</p>
-        <button>check</button>
+      <Link to="/program">
+      <button>check</button>
+      </Link>
       </div>
 
       <div className='syukatu-container'>
         <p>job hunting</p>
+        <Link to="/program">
         <button>check</button>
+        </Link>
       </div>
     </section>
 
   
 
-    <div className='footer-container'>
+    {/* <div className='footer-container'>
     <footer className='footer'>
         <p>開発者：髙木　優希</p>
         <p>技術スタック：React、Next.js、boostrap</p>
       </footer>
-      </div> 
+      </div>  */}
+          <footer class="footer">
+            <div class="footer-container">
+            <div class="footer-logo">
+                <h2>YamatoWeb</h2>
+                <p>© 2025 MyWebsite. All Rights Reserved.</p>
+            </div>
+
+          
+            <div class="footer-nav">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Services</a>
+                <a>
+                <a href="https://github.com/takapom" target="_blank" rel="noopener noreferrer" className=''>
+                <i className="bi bi-github" style={{ fontSize: '30px', color: 'white' }}></i>
+                </a>
+                </a>
+            </div>
+
+
+            <div class="footer-social">
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </footer>
 
     </>
     

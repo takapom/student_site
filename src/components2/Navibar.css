@@ -102,6 +102,88 @@ body {
     height: 40vh;
 }
 
+/* フッター全体 */
+.footer {
+    background: linear-gradient(135deg, #1e1e1e, #292929);
+    color: white;
+    padding: 30px 0;
+    font-family: 'Arial', sans-serif;
+}
+
+/* フッターのコンテナ */
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* ロゴとコピーライト */
+.footer-logo h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.footer-logo p {
+    font-size: 14px;
+    color: #b0b0b0;
+}
+
+/* ナビゲーション */
+.footer-nav {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-nav a {
+    text-decoration: none;
+    color: #b0b0b0;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.footer-nav a:hover {
+    color: #ffffff;
+}
+
+/* SNS アイコン */
+.footer-social {
+    display: flex;
+    gap: 15px;
+}
+
+.footer-social a {
+    text-decoration: none;
+    color: #b0b0b0;
+    font-size: 20px;
+    transition: color 0.3s, transform 0.2s;
+}
+
+.footer-social a:hover {
+    color: #ffffff;
+    transform: scale(1.1);
+}
+
+/* レスポンシブ対応 */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-nav {
+        margin: 15px 0;
+    }
+
+    .footer-social {
+        justify-content: center;
+    }
+}
+
 
 
 
