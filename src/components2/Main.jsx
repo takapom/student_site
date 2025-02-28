@@ -44,7 +44,7 @@ function Sidebar() {
               </NavDropdown.Item>
               <NavDropdown.Item href="#action/3.3">時間割</NavDropdown.Item>
               <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">
+              <NavDropdown.Item href="/unei">
                 運営募集ページ
               </NavDropdown.Item>
             </NavDropdown>

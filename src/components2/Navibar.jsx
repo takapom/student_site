@@ -11,6 +11,7 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
 
 
 
+
 const Navibar = () => {
   return (
     <>
@@ -44,7 +45,7 @@ const Navibar = () => {
 
       <div className='syukatu-container'>
         <p>job hunting</p>
-        <Link to="#">
+        <Link to="/hunthing">
         <button>check</button>
         </Link>
       </div>

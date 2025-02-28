@@ -1,8 +1,10 @@
 import React from 'react';
-import "./Program.css";
+import Navibar from './Navibar';
+import './Program.css';
 
 const Program = () => {
   return (
+    <>
     <div className="program-container">
       <h1 className='first-text'>
         プログラミング言語やフレームワーク、ツールなどを分かりやすく書いてます！！
@@ -64,6 +66,7 @@ const Program = () => {
         </div>
       </section>
     </div>
+    </>
   );
 }
 
